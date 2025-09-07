@@ -1,0 +1,76 @@
+/* 基础样式 */
+body {
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'PingFang SC', 'Kaiti SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-size: 4rem;
+    background: linear-gradient(180deg, #ff6b35 0%, #c33c00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.wooden-fish-wrapper {
+    position: relative;
+    width: 284px;
+    height: 236px;
+    margin: 0 auto 1.5rem;
+}
+
+.wooden-fish {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s ease;
+}
+
+.hammer {
+    position: absolute;
+    width: 119px;
+    height: 69px;
+    right: -20px;
+    top: 10px;
+    transition: transform 0.1s ease;
+    pointer-events: none;
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 1.5rem 0;
+}
+
+.tip {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}

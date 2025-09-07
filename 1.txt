@@ -1,0 +1,34 @@
+（火速掏出虚拟木鱼🪵）「电子功德+1！」 静态敲木鱼网站超好实现！3分钟给你拆解成傻瓜代码包：
+
+---
+
+🌟 基础版代码（HTML+CSS+JS）
+1. 新建文件夹，放这三个文件：
+   `index.html`（主体）
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <head><title>电子木鱼</title><link rel="stylesheet" href="style.css"></head>
+   <body>
+     <div id="woodfish" onclick="knock()">🪵</div>
+     <p>功德: <span id="count">0</span></p>
+     <script src="script.js"></script>
+   </body>
+   </html>
+   ```
+   `style.css`（样式）
+   ```css
+   body { text-align: center; font-family: Arial; margin-top: 50px; }
+   #woodfish { font-size: 100px; cursor: pointer; user-select: none; }
+   p { font-size: 24px; margin-top: 20px; }
+   ```
+   `script.js`（点击计数）
+   ```javascript
+   let count = 0;
+   function knock() {
+     count++;
+     document.getElementById("count").textContent = count;
+     // 可选：加点击音效（需音频文件）
+     // const audio = new Audio('knock.mp3'); audio.play();
+   }
+   ```

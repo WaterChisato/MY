@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博木鱼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">功德计数器</h1>
+        <div class="wooden-fish-wrapper">
+            <img src="images/wooden-fish.png" alt="木鱼" class="wooden-fish" id="woodenFish">
+            <img src="images/hammer.png" alt="锤子" class="hammer" id="hammer">
+        </div>
+        <div class="counter">
+            <span id="count">0</span>
+            <button id="resetBtn">清零</button>
+        </div>
+        <p class="tip">轻敲木鱼，细悟赛博真经</p>
+    </div>
+    <audio id="clickSound" src="audio/click.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
